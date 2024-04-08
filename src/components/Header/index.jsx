@@ -60,7 +60,11 @@ const Header = ({ onSearchChange, toggleCart }) => {
                 onClick={toggleCart}
                 className="CARTBTN w-full flex items-center justify-center h-10 sm:mb-0 text-white bg-logo-green hover:bg-logo-green-hover transition-all ease-in-out duration-300 py-1 px-4 rounded hover:scale-105"
               >
-                <img className="CART-ICON h-full " src={CartIcon} alt="Cart Icon"  />
+                <img
+                  className="CART-ICON h-full "
+                  src={CartIcon}
+                  alt="Cart Icon"
+                />
                 {totalItems > 0 && (
                   <span className="QUANTITY-COUNTER absolute top-0 right-0 inline-flex items-center justify-center px-2 py-1 text-sM font-bold leading-none text-red-100 transform translate-x-1/2 -translate-y-1/2 bg-red-600 rounded-full">
                     {totalItems}
@@ -70,12 +74,15 @@ const Header = ({ onSearchChange, toggleCart }) => {
             </div>
           </div>
           {/* Navigation Links */}
-          <nav className="NAVLINKS-WRAPPER flex justify-start flex-col sm:flex-row w-auto sm:w-1/3 sm:justify-center">
+          <nav className="NAVLINKS-WRAPPER flex justify-start text-lg font-semibold flex-col sm:flex-row w-11/12 mx-auto my-2 sm:w-1/3 sm:justify-center">
             <Link
               to="/contact"
-              className="NAVLINK_HEADER flex w-auto text-black hover:text-logo-green-hover mb-4 sm:mb-0 text-center sm:text-left"
+              className="NAVLINK_HEADER flex  justify-center w-1/3 p-2 rounded-md  bg-white 
+              text-center ml-2 shadow-header
+              transition-all ease-in-out text-logo-green-hover hover:scale-105 
+              hover:border-logo-green hover:border-2 sm:mb-0 sm:w-2/3 lg:w-1/3 "
             >
-              Contact
+              CONTACT
             </Link>
           </nav>
         </div>
