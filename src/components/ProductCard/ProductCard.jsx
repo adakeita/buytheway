@@ -1,5 +1,5 @@
-import React from "react";
 import { useNavigate } from "react-router-dom";
+
 
 const ProductCard = ({ product }) => {
   const navigate = useNavigate();
@@ -10,7 +10,7 @@ const ProductCard = ({ product }) => {
 
   return (
     <div
-      className="PRODUCTCARD-CONTAINER h-full p-2 my-2 group block cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out hover:shadow-lg bg-white"
+      className="PRODUCTCARD-CONTAINER p-2 my-2 group block cursor-pointer hover:scale-105 transition-transform duration-300 ease-in-out hover:shadow-lg bg-white"
       onClick={() => navigate(`/product/${product.id}`)}
     >
       <img
