@@ -29,8 +29,6 @@ export const fetchProductsBySearchTerm = async (searchTerm) => {
     const response = await axios.get(`${API_BASE_URL}`);
     const data = response.data;
 
-    // Assuming the API returns all products and filtering is done client-side.
-    // Adjust this logic if your API supports server-side searching.
     const filteredData = data.filter((product) =>
       product.title.toLowerCase().includes(searchTerm.toLowerCase())
     );
